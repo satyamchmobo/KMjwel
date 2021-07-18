@@ -1,13 +1,11 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 
 class ProdDetailsWidget extends StatefulWidget {
-  ProdDetailsWidget({Key key}) : super(key: key);
+  
 
   @override
   _ProdDetailsWidgetState createState() => _ProdDetailsWidgetState();
@@ -301,105 +299,105 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                             ],
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(0, 35, 0, 0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Align(
-                                alignment: Alignment(0, 0),
-                                child: Container(
-                                  width: 154,
-                                  height: 44,
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment(0, 0),
-                                        child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: 'Share',
-                                          icon: Icon(
-                                            Icons.add,
-                                            color: Colors.transparent,
-                                            size: 20,
-                                          ),
-                                          options: FFButtonOptions(
-                                            width: 145,
-                                            height: 52,
-                                            color: Color(0xFFD8AD67),
-                                            textStyle: GoogleFonts.getFont(
-                                              'Roboto',
-                                              color: Colors.white,
-                                              fontSize: 17,
-                                            ),
-                                            elevation: 0,
-                                            borderSide: BorderSide(
-                                              color: Colors.transparent,
-                                              width: 0,
-                                            ),
-                                            borderRadius: 8,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment: Alignment(-0.35, 0.13),
-                                        child: Icon(
-                                          Icons.share_rounded,
-                                          color: Colors.white,
-                                          size: 24,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: Alignment(0, 0),
-                                child: Container(
-                                  width: 154,
-                                  height: 44,
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment(0, 0),
-                                        child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: 'Contac',
-                                          icon: Icon(
-                                            Icons.add,
-                                            color: Colors.transparent,
-                                            size: 20,
-                                          ),
-                                          options: FFButtonOptions(
-                                            width: 145,
-                                            height: 52,
-                                            color: Colors.white,
-                                            textStyle: GoogleFonts.getFont(
-                                              'Roboto',
-                                              color: Color(0xFFD8AD67),
-                                              fontSize: 17,
-                                            ),
-                                            elevation: 0,
-                                            borderSide: BorderSide(
-                                              color: Color(0xFFD8AD67),
-                                              width: 2,
-                                            ),
-                                            borderRadius: 8,
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        )
+                        // Padding(
+                        //   padding: EdgeInsets.fromLTRB(0, 35, 0, 0),
+                        //   child: Row(
+                        //     mainAxisSize: MainAxisSize.max,
+                        //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //     children: [
+                        //       Align(
+                        //         alignment: Alignment(0, 0),
+                        //         child: Container(
+                        //           width: 154,
+                        //           height: 44,
+                        //           child: Stack(
+                        //             children: [
+                        //               Align(
+                        //                 alignment: Alignment(0, 0),
+                        //                 child: FFButtonWidget(
+                        //                   onPressed: () {
+                        //                     print('Button pressed ...');
+                        //                   },
+                        //                   text: 'Share',
+                        //                   icon: Icon(
+                        //                     Icons.add,
+                        //                     color: Colors.transparent,
+                        //                     size: 20,
+                        //                   ),
+                        //                   options: FFButtonOptions(
+                        //                     width: 145,
+                        //                     height: 52,
+                        //                     color: Color(0xFFD8AD67),
+                        //                     textStyle: GoogleFonts.getFont(
+                        //                       'Roboto',
+                        //                       color: Colors.white,
+                        //                       fontSize: 17,
+                        //                     ),
+                        //                     elevation: 0,
+                        //                     borderSide: BorderSide(
+                        //                       color: Colors.transparent,
+                        //                       width: 0,
+                        //                     ),
+                        //                     borderRadius: 8,
+                        //                   ),
+                        //                 ),
+                        //               ),
+                        //               Align(
+                        //                 alignment: Alignment(-0.35, 0.13),
+                        //                 child: Icon(
+                        //                   Icons.share_rounded,
+                        //                   color: Colors.white,
+                        //                   size: 24,
+                        //                 ),
+                        //               )
+                        //             ],
+                        //           ),
+                        //         ),
+                        //       ),
+                        //       Align(
+                        //         alignment: Alignment(0, 0),
+                        //         child: Container(
+                        //           width: 154,
+                        //           height: 44,
+                        //           child: Stack(
+                        //             children: [
+                        //               Align(
+                        //                 alignment: Alignment(0, 0),
+                        //                 child: FFButtonWidget(
+                        //                   onPressed: () {
+                        //                     print('Button pressed ...');
+                        //                   },
+                        //                   text: 'Contac',
+                        //                   icon: Icon(
+                        //                     Icons.add,
+                        //                     color: Colors.transparent,
+                        //                     size: 20,
+                        //                   ),
+                        //                   options: FFButtonOptions(
+                        //                     width: 145,
+                        //                     height: 52,
+                        //                     color: Colors.white,
+                        //                     textStyle: GoogleFonts.getFont(
+                        //                       'Roboto',
+                        //                       color: Color(0xFFD8AD67),
+                        //                       fontSize: 17,
+                        //                     ),
+                        //                     elevation: 0,
+                        //                     borderSide: BorderSide(
+                        //                       color: Color(0xFFD8AD67),
+                        //                       width: 2,
+                        //                     ),
+                        //                     borderRadius: 8,
+                        //                   ),
+                        //                 ),
+                        //               )
+                        //             ],
+                        //           ),
+                        //         ),
+                        //       )
+                        //     ],
+                        //   ),
+                        // )
                       ],
                     ),
                   ),
