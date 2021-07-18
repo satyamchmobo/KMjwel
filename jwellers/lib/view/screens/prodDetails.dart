@@ -1,12 +1,8 @@
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
-
 class ProdDetailsWidget extends StatefulWidget {
-  
-
   @override
   _ProdDetailsWidgetState createState() => _ProdDetailsWidgetState();
 }
@@ -184,7 +180,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                               ),
                               Text(
                                 'Bracelet',
-                                style:  Get.textTheme.bodyText1!.copyWith(
+                                style: Get.textTheme.bodyText1!.copyWith(
                                   fontFamily: 'Poppins',
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
@@ -197,7 +193,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                           padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
                           child: Text(
                             '24.0 Gram',
-                            style:  Get.textTheme.bodyText1!.copyWith(
+                            style: Get.textTheme.bodyText1!.copyWith(
                               fontFamily: 'Poppins',
                               color: Color(0xFFD8AA67),
                               fontSize: 16,
@@ -209,7 +205,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                           padding: EdgeInsets.fromLTRB(0, 8, 30, 0),
                           child: Text(
                             'Ipsum cupidatat esse irure sit eu anim anim elit. Officia id sunt culpa velit do adipisicing velit deserunt. ',
-                            style:  Get.textTheme.bodyText1!.copyWith(
+                            style: Get.textTheme.bodyText1!.copyWith(
                               fontFamily: 'Poppins',
                               fontSize: 11,
                             ),
@@ -219,7 +215,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                           padding: EdgeInsets.fromLTRB(0, 18, 0, 0),
                           child: Text(
                             'AVAILABLE  IN (GRAMS)',
-                            style:  Get.textTheme.bodyText1!.copyWith(
+                            style: Get.textTheme.bodyText1!.copyWith(
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w500,
                             ),
@@ -243,8 +239,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                                     alignment: Alignment(0, 0.1),
                                     child: Text(
                                       '24',
-                                      style:
-                                           Get.textTheme.bodyText1!.copyWith(
+                                      style: Get.textTheme.bodyText1!.copyWith(
                                         fontFamily: 'Poppins',
                                         color: Color(0xFFD8AD67),
                                       ),
@@ -265,8 +260,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                                     alignment: Alignment(0, 0.1),
                                     child: Text(
                                       '28',
-                                      style:
-                                           Get.textTheme.bodyText1!.copyWith(
+                                      style: Get.textTheme.bodyText1!.copyWith(
                                         fontFamily: 'Poppins',
                                         color: Color(0xFFD8AD67),
                                       ),
@@ -287,8 +281,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                                     alignment: Alignment(0, 0.1),
                                     child: Text(
                                       '32',
-                                      style:
-                                           Get.textTheme.bodyText1!.copyWith(
+                                      style: Get.textTheme.bodyText1!.copyWith(
                                         fontFamily: 'Poppins',
                                         color: Color(0xFFD8AD67),
                                       ),
