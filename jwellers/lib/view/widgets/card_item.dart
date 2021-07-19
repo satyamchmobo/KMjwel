@@ -14,10 +14,25 @@ class CardItem extends StatelessWidget {
       // width: 100,
       // height: 100,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(8),
-        shape: BoxShape.rectangle,
-      ),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(8),
+          shape: BoxShape.rectangle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade400,
+              // spreadRadius: 1.0,
+              blurRadius: 2.21,
+              offset: Offset(
+                0,
+                2.77,
+              ),
+            ),
+            BoxShadow(
+              color: Colors.grey.shade500,
+              blurRadius: 5.32,
+              offset: Offset(0, 6.65),
+            )
+          ]),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -36,7 +51,7 @@ class CardItem extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
               width: MediaQuery.of(context).size.width,
-              height: 250 - 136,
+              height: 101,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),

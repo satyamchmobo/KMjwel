@@ -18,8 +18,8 @@ class _ExplorePageState extends State<ExplorePage> {
       body: SafeArea(
         child: Container(
           padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
-          // width: MediaQuery.of(context).size.width,
-          // height: MediaQuery.of(context).size.height * 1,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height * 1,
           decoration: BoxDecoration(
             color: Color(0xFFDCDCDC),
           ),
@@ -32,7 +32,12 @@ class _ExplorePageState extends State<ExplorePage> {
               ),
               WideItem(
                 imgPath: 'assets/images/Rectangle 14 (1).png',
-                itemType: 'Chains',
+                itemType: 'Bracelet',
+                noOfItems: '42',
+              ),
+              WideItem(
+                imgPath: 'assets/images/Rectangle 14 (1).png',
+                itemType: 'Haram',
                 noOfItems: '42',
               ),
               WideItem(
@@ -42,12 +47,7 @@ class _ExplorePageState extends State<ExplorePage> {
               ),
               WideItem(
                 imgPath: 'assets/images/Rectangle 14 (1).png',
-                itemType: 'Chains',
-                noOfItems: '42',
-              ),
-              WideItem(
-                imgPath: 'assets/images/Rectangle 14 (1).png',
-                itemType: 'Chains',
+                itemType: 'Necklace',
                 noOfItems: '42',
               )
             ],

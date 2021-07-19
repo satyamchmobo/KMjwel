@@ -24,7 +24,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       appBar: myAppBar(pageTitle: 'New Arrivals'),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.fromLTRB(15, 0, 15, 10),
+          padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 1,
           decoration: BoxDecoration(
@@ -36,7 +36,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               crossAxisCount: 2,
               crossAxisSpacing: 15,
               mainAxisSpacing: 15,
-              childAspectRatio: 0.65,
+              childAspectRatio: 0.69,
             ),
             scrollDirection: Axis.vertical,
             children: [
