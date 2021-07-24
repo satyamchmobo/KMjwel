@@ -15,9 +15,9 @@ class WideItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         shape: BoxShape.rectangle,
       ),
-      height: MediaQuery.of(context).size.height * 0.2,
+      height: MediaQuery.of(context).size.height * 0.17,
       // width: MediaQuery.of(context).size.width * 0.5,
-      margin: EdgeInsets.fromLTRB(13, 10, 13, 10),
+      margin: EdgeInsets.fromLTRB(13, 0, 13, 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -60,8 +60,8 @@ class WideItem extends StatelessWidget {
             ),
             child: Image.asset(
               imgPath,
-              width: MediaQuery.of(context).size.width * 0.42,
-              height: MediaQuery.of(context).size.height * 0.2,
+              // width: MediaQuery.of(context).size.width * 0.42,
+              // height: MediaQuery.of(context).size.height * 0.2,
               fit: BoxFit.fill,
             ),
           ),

@@ -16,27 +16,54 @@ class HomePageWidget extends StatefulWidget {
 
 class _HomePageWidgetState extends State<HomePageWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
+  Future<void> _showMyDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('AlertDialog Title'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: const <Widget>[
+                Text('This is a demo alert dialog.'),
+                Text('Would you like to approve of this message?'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Approve'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: myAppBar(pageTitle: 'New Arrivals'),
+      appBar: myAppBar(pageTitle: 'New Arrivals', context: context),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+          padding: EdgeInsets.fromLTRB(15, 0, 15, 10),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 1,
           decoration: BoxDecoration(
             color: Color(0xFFDCDCDC),
           ),
           child: GridView(
-            padding: EdgeInsets.zero,
+            padding: EdgeInsets.only(bottom: 10),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              crossAxisSpacing: 15,
-              mainAxisSpacing: 15,
-              childAspectRatio: 0.69,
+              crossAxisSpacing: 13,
+              mainAxisSpacing: 20,
+              childAspectRatio: MediaQuery.of(context).size.aspectRatio * 1.3,
             ),
             scrollDirection: Axis.vertical,
             children: [
