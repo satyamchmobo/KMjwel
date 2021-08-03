@@ -1,20 +1,23 @@
 // import '../flutter_flow/flutter_flow_theme.dart';
 // import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:jwellers/view/colors.dart';
+import 'package:jwellers/view/screens/prodDetails.dart';
 
 import '../widgets/appbar.dart';
 import '../widgets/card_item.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
-class HomePageWidget extends StatefulWidget {
-  // HomePageWidget({Key key}) : super(key: key);
+class NewArrivals extends StatefulWidget {
+  // NewArrivals({Key key}) : super(key: key);
 
   @override
-  _HomePageWidgetState createState() => _HomePageWidgetState();
+  _NewArrivalsState createState() => _NewArrivalsState();
 }
 
-class _HomePageWidgetState extends State<HomePageWidget> {
+class _NewArrivalsState extends State<NewArrivals> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
   Future<void> _showMyDialog() async {
     return showDialog<void>(
@@ -47,6 +50,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: appBgLight,
       key: scaffoldKey,
       appBar: myAppBar(pageTitle: 'New Arrivals', context: context),
       body: SafeArea(
@@ -67,10 +71,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             ),
             scrollDirection: Axis.vertical,
             children: [
-              CardItem(
-                imgPath: 'assets/images/Rectangle 14 (1).png',
-                itemType: 'Men' 's Bracelet',
-                itemCategory: 'Bracelet',
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ProdDetailsWidget()),
+                  );
+                },
+                child: CardItem(
+                  imgPath: 'assets/images/Rectangle 14 (1).png',
+                  itemType: 'Men' 's Bracelet',
+                  itemCategory: 'Bracelet',
+                ),
               ),
               CardItem(
                 imgPath: 'assets/images/Rectangle 14 (1).png',

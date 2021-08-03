@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jwellers/view/colors.dart';
 import 'package:jwellers/view/screens/wide_item.dart';
 
 import '../widgets/appbar.dart';
@@ -14,6 +15,7 @@ class _ExplorePageState extends State<ExplorePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: appBgLight,
       appBar: myAppBar(pageTitle: 'Explore'),
       body: SafeArea(
         child: Container(

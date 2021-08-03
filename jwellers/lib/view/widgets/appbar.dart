@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jwellers/view/screens/new_arrivals.dart';
 import 'package:jwellers/view/widgets/filter_box.dart';
 
 PreferredSize myAppBar(
@@ -34,6 +35,8 @@ PreferredSize myAppBar(
       actions: [
         IconButton(
           onPressed: () {
+           
+
             print('IconButton pressed ...');
           },
           icon: Icon(

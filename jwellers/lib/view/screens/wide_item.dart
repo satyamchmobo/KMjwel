@@ -58,7 +58,7 @@ class WideItem extends StatelessWidget {
               topRight: Radius.circular(8),
               bottomRight: Radius.circular(8),
             ),
-            child: Image.asset(
+            child:  Image.asset(
               imgPath,
               // width: MediaQuery.of(context).size.width * 0.42,
               // height: MediaQuery.of(context).size.height * 0.2,
