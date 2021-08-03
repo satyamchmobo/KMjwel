@@ -53,7 +53,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         child: Container(
           padding: EdgeInsets.fromLTRB(15, 0, 15, 10),
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * 1,
+          height: double.infinity,
           decoration: BoxDecoration(
             color: Color(0xFFDCDCDC),
           ),

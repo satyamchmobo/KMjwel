@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jwellers/view/screens/collection_screen.dart';
 import 'package:jwellers/view/screens/explore.dart';
 import 'package:jwellers/view/screens/prodDetails.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomePageWidget(),
+      home: MyCollection(),
     );
   }
 }
