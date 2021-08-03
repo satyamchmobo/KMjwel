@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 // import 'package:google_fonts/google_fonts.dart';
+
 import 'package:get/get.dart';
 import 'package:jwellers/view/screens/widgets/2iconCont.dart';
 import 'package:jwellers/view/screens/widgets/circleIconBut.dart';
