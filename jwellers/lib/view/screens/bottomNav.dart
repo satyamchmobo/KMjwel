@@ -5,7 +5,7 @@ import 'package:jwellers/view/screens/explore.dart';
 import 'package:jwellers/view/screens/home.dart';
 import 'package:jwellers/view/screens/new_arrivals.dart';
 import 'package:jwellers/view/screens/settings.dart';
-// import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 class BottomNavPage extends StatefulWidget {

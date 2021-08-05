@@ -8,6 +8,7 @@ Widget solidButton(
     required double leftPadRatio,
     required double rightPadRatio,
     required Function()? onTap,
+    required IconData iconData,
     required String text}) {
   return InkWell(
     onTap: onTap,
@@ -32,8 +33,8 @@ Widget solidButton(
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 5),
-                child: const Icon(
-                  Icons.share,
+                child: Icon(
+                  iconData,
                   color: Colors.white,
                 ),
               ),
@@ -57,59 +58,58 @@ Widget solidButton(
   );
 }
 
-         // Padding(
-                        //   padding: EdgeInsets.fromLTRB(0, 35, 0, 0),
-                        //   child: Row(
-                        //     mainAxisSize: MainAxisSize.max,
-                        //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //     children: [
-                        //       Align(
-                        //         alignment: Alignment(0, 0),
-                        //         child: Container(
-                        //           width: 154,
-                        //           height: 44,
-                        //           child: Stack(
-                        //             children: [
-                        //               Align(
-                        //                 alignment: Alignment(0, 0),
-                        //                 child: FFButtonWidget(
-                        //                   onPressed: () {
-                        //                     print('Button pressed ...');
-                        //                   },
-                        //                   text: 'Share',
-                        //                   icon: Icon(
-                        //                     Icons.add,
-                        //                     color: Colors.transparent,
-                        //                     size: 20,
-                        //                   ),
-                        //                   options: FFButtonOptions(
-                        //                     width: 145,
-                        //                     height: 52,
-                        //                     color: Color(0xFFD8AD67),
-                        //                     textStyle: GoogleFonts.getFont(
-                        //                       'Roboto',
-                        //                       color: Colors.white,
-                        //                       fontSize: 17,
-                        //                     ),
-                        //                     elevation: 0,
-                        //                     borderSide: BorderSide(
-                        //                       color: Colors.transparent,
-                        //                       width: 0,
-                        //                     ),
-                        //                     borderRadius: 8,
-                        //                   ),
-                        //                 ),
-                        //               ),
-                        //               Align(
-                        //                 alignment: Alignment(-0.35, 0.13),
-                        //                 child: Icon(
-                        //                   Icons.share_rounded,
-                        //                   color: Colors.white,
-                        //                   size: 24,
-                        //                 ),
-                        //               )
-                        //             ],
-                        //           ),
-                        //         ),
-                        //       ),
-        
+// Padding(
+//   padding: EdgeInsets.fromLTRB(0, 35, 0, 0),
+//   child: Row(
+//     mainAxisSize: MainAxisSize.max,
+//     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//     children: [
+//       Align(
+//         alignment: Alignment(0, 0),
+//         child: Container(
+//           width: 154,
+//           height: 44,
+//           child: Stack(
+//             children: [
+//               Align(
+//                 alignment: Alignment(0, 0),
+//                 child: GFButton(
+//                   onPressed: () {
+//                     print('Button pressed ...');
+//                   },
+//                   text: 'Share',
+//                   icon: Icon(
+//                     Icons.add,
+//                     color: Colors.transparent,
+//                     size: 20,
+//                   ),
+//                   options: FFButtonOptions(
+//                     width: 145,
+//                     height: 52,
+//                     color: Color(0xFFD8AD67),
+//                     textStyle: GoogleFonts.getFont(
+//                       'Roboto',
+//                       color: Colors.white,
+//                       fontSize: 17,
+//                     ),
+//                     elevation: 0,
+//                     borderSide: BorderSide(
+//                       color: Colors.transparent,
+//                       width: 0,
+//                     ),
+//                     borderRadius: 8,
+//                   ),
+//                 ),
+//               ),
+//               Align(
+//                 alignment: Alignment(-0.35, 0.13),
+//                 child: Icon(
+//                   Icons.share_rounded,
+//                   color: Colors.white,
+//                   size: 24,
+//                 ),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),

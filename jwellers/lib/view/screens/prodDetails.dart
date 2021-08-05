@@ -90,7 +90,7 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                   ),
                 ),
               ),
-               Align(
+              Align(
                 alignment: Alignment(0, 1),
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
@@ -193,7 +193,8 @@ class _ProdDetailsWidgetState extends State<ProdDetailsWidget> {
                           leftPadRatio: 15,
                           rightPadRatio: 30,
                           text: 'Share',
-                          onTap: () {}),
+                          onTap: () {},
+                          iconData: Icons.share),
                       outlinedButton(
                           onTap: () {},
                           butWidRatioToScreen: 2.5,

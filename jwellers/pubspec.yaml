@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  google_fonts: ^2.1.0
+  
 
 dev_dependencies:
   flutter_test:
@@ -33,7 +33,10 @@ dev_dependencies:
   cached_network_image: 2.5.1
   font_awesome_flutter: null
   geolocator: null
-  get: ^4.1.4
+  # get: ^4.1.4
+  get: ^4.3.0
+  getwidget: ^2.0.3
+  google_fonts: ^1.1.2
   intl: null
   lint: null
   linter: null
