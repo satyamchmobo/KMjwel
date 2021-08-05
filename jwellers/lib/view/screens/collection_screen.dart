@@ -6,7 +6,7 @@ import 'package:jwellers/view/widgets/card_item.dart';
 import '../colors.dart';
 
 class MyCollection extends StatefulWidget {
-  const MyCollection({Key? key}) : super(key: key);
+  // const MyCollection({Key? key}) : super(key: key);
 
   @override
   _MyCollectionState createState() => _MyCollectionState();
