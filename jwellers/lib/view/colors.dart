@@ -10,3 +10,4 @@ Color appBgLight = Color(0xFFDCDCDC);
 
 Color appDisableGrey = Color(0xFF2B2A29);
 
+Color labels = Color(0xFF46802D);

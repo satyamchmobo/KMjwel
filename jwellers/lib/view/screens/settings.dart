@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jwellers/view/colors.dart';
 import 'package:jwellers/view/screens/aboutUs.dart';
+import 'package:jwellers/view/screens/contactus.dart';
 import 'package:jwellers/view/screens/notifSettings.dart';
 import 'package:jwellers/view/screens/widgets/settingCards.dart';
 import 'package:jwellers/view/widgets/outlineButton.dart';
@@ -74,11 +75,22 @@ class _SettingsState extends State<Settings> {
                   pdTop: 40,
                   pdBot: 0),
             ),
-            settingCard(
-                icData: Icons.contact_support,
-                text: 'Contact us',
-                pdTop: 16,
-                pdBot: 0),
+            
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ContactusWidget()),
+                );
+              },
+
+                  child: settingCard(                
+                  icData: Icons.contact_support,
+                  text: 'Contact us',
+                  pdTop: 16,
+                  pdBot: 0),
+            ),
+
             settingCard(
                 icData: Icons.share_sharp, text: 'Share', pdTop: 16, pdBot: 0),
             outlinedButton(

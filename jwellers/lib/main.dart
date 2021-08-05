@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:jwellers/view/screens/collection_screen.dart';
 import 'package:jwellers/view/screens/bottomNav.dart';
