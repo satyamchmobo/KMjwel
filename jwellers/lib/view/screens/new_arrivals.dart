@@ -57,7 +57,7 @@ class _NewArrivalsState extends State<NewArrivals> {
         child: Container(
           padding: EdgeInsets.fromLTRB(15, 0, 15, 10),
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * 1,
+          height: double.infinity,
           decoration: BoxDecoration(
             color: Color(0xFFDCDCDC),
           ),
@@ -65,7 +65,7 @@ class _NewArrivalsState extends State<NewArrivals> {
             padding: EdgeInsets.only(bottom: 10),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              crossAxisSpacing: 13,
+              crossAxisSpacing: 17,
               mainAxisSpacing: 20,
               childAspectRatio: MediaQuery.of(context).size.aspectRatio * 1.3,
             ),
