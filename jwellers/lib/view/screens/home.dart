@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 
 import 'package:get/get.dart';
 import 'package:jwellers/view/colors.dart';
+import 'package:jwellers/view/screens/new_arrivals.dart';
 import 'package:jwellers/view/screens/prodDetails.dart';
 import 'package:jwellers/view/widgets/card_item.dart';
 
@@ -379,34 +380,43 @@ class _HomeState extends State<Home> {
                     )
                   ],
                 ),
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Align(
-                      alignment: Alignment(0.35, 0),
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(22, 0, 0, 0),
-                        child: Text(
-                          'New Designs',
-                          style: Get.textTheme.subtitle2!.copyWith(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.w700,
-                              fontSize: 18),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NewArrivals()),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Align(
+                        alignment: Alignment(0.35, 0),
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(22, 0, 0, 0),
+                          child: Text(
+                            'New Designs',
+                            style: Get.textTheme.subtitle2!.copyWith(
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w700,
+                                fontSize: 18),
+                          ),
                         ),
                       ),
-                    ),
-                    Expanded(
-                      child: Align(
-                        alignment: Alignment(0.5, -0.5),
-                        child: Icon(
-                          Icons.keyboard_arrow_right,
-                          color: Colors.black,
-                          size: 24,
+                      Expanded(
+                        child: Align(
+                          alignment: Alignment(0.5, -0.5),
+                          child: Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Colors.black,
+                            size: 24,
+                          ),
                         ),
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(height: 21),
               ],

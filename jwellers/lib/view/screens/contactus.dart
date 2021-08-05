@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:jwellers/view/colors.dart';
 
 class ContactusWidget extends StatefulWidget {
-
   @override
   _ContactusWidgetState createState() => _ContactusWidgetState();
 }

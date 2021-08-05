@@ -85,10 +85,19 @@ class _NewArrivalsState extends State<NewArrivals> {
                   itemCategory: 'Bracelet',
                 ),
               ),
-              CardItem(
-                imgPath: 'assets/images/Rectangle 14 (1).png',
-                itemType: 'Men' 's Bracelet',
-                itemCategory: 'Bracelet',
+              InkWell(
+                  onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ProdDetailsWidget()),
+                  );
+                },
+                child: CardItem(
+                  imgPath: 'assets/images/Rectangle 14 (1).png',
+                  itemType: 'Men' 's Bracelet',
+                  itemCategory: 'Bracelet',
+                ),
               ),
               CardItem(
                 imgPath: 'assets/images/Rectangle 14 (1).png',

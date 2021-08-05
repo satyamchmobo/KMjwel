@@ -18,37 +18,37 @@ class _MyCollectionState extends State<MyCollection> {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
     {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
     {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
     {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
     {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
     {
       'item': 'Men' 's Bracelet',
       'item_type': 'Bracelet',
       'img_path':
-          'assets/images/kisspng-wedding-ring-marriage-symbol-wedding-ring-5a9a61324c58a5 1.png'
+          'assets/images/Rectangle 15.png'
     },
   ];
   int len = 0;
