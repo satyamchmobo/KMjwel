@@ -35,6 +35,10 @@ class CardItem extends StatelessWidget {
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
+            decoration: BoxDecoration(
+              color: Color(0xFF2B2A29),
+              borderRadius: BorderRadius.circular(8),
+            ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
