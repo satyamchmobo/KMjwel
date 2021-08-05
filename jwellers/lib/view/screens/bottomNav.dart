@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jwellers/view/colors.dart';
+import 'package:jwellers/view/screens/collection_screen.dart';
 import 'package:jwellers/view/screens/explore.dart';
 import 'package:jwellers/view/screens/home.dart';
 import 'package:jwellers/view/screens/new_arrivals.dart';
@@ -17,7 +18,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
 
   List<Widget> pages = [
     Home(),
-    NewArrivals(),
+    MyCollection(),
     ExplorePage(),
     Settings(),
   ];

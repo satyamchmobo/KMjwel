@@ -65,7 +65,7 @@ class _NewArrivalsState extends State<NewArrivals> {
             padding: EdgeInsets.only(bottom: 10),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              crossAxisSpacing: 13,
+              crossAxisSpacing: 17,
               mainAxisSpacing: 20,
               childAspectRatio: MediaQuery.of(context).size.aspectRatio * 1.3,
             ),

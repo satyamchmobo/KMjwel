@@ -10,19 +10,8 @@ PreferredSize myAppBar(
     child: AppBar(
       backgroundColor: Color(0xFFDCDCDC),
       automaticallyImplyLeading: false,
-      leading: IconButton(
-        onPressed: () {
-          print('IconButton pressed ...');
-        },
-        icon: Icon(
-          Icons.keyboard_arrow_left,
-          color: Colors.black,
-          size: 30,
-        ),
-        iconSize: 30,
-      ),
       title: Align(
-        alignment: Alignment(-1, 0),
+        alignment: Alignment(-0.95, 0),
         child: Text(
           pageTitle,
           style: Get.textTheme.headline1!.copyWith(
@@ -35,8 +24,6 @@ PreferredSize myAppBar(
       actions: [
         IconButton(
           onPressed: () {
-           
-
             print('IconButton pressed ...');
           },
           icon: Icon(
