@@ -54,15 +54,13 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      body: SafeArea(
-        child: Align(
-          alignment: Alignment(0.2, 0),
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(2, 0, 0, 0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverList(
+            // to make a single scrollable entity
+            delegate: SliverChildListDelegate(
+              // list of scrollable items
+              [
                 Padding(
                   padding: const EdgeInsets.only(left: 25, right: 25, top: 10),
                   child: Container(
@@ -411,82 +409,134 @@ class _HomeState extends State<Home> {
                   ],
                 ),
                 SizedBox(height: 21),
-                Expanded(
-                  child: GridView(
-                    padding: EdgeInsets.only(bottom: 10),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 21,
-                      mainAxisSpacing: 20,
-                      childAspectRatio:
-                          MediaQuery.of(context).size.aspectRatio * 1.3,
-                    ),
-                    scrollDirection: Axis.vertical,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ProdDetailsWidget()),
-                          );
-                        },
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 7.5),
-                          child: CardItem(
-                            imgPath: 'assets/images/Rectangle 14 (1).png',
-                            itemType: 'Men' 's Bracelet',
-                            itemCategory: 'Bracelet',
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 7.5),
-                        child: CardItem(
-                          imgPath: 'assets/images/Rectangle 14 (1).png',
-                          itemType: 'Men' 's Bracelet',
-                          itemCategory: 'Bracelet',
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 7.5),
-                        child: CardItem(
-                          imgPath: 'assets/images/Rectangle 14 (1).png',
-                          itemType: 'Men' 's Bracelet',
-                          itemCategory: 'Bracelet',
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 7.5),
-                        child: CardItem(
-                          imgPath: 'assets/images/Rectangle 14 (1).png',
-                          itemType: 'Men' 's Bracelet',
-                          itemCategory: 'Bracelet',
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 7.5),
-                        child: CardItem(
-                          imgPath: 'assets/images/Rectangle 14 (1).png',
-                          itemType: 'Men' 's Bracelet',
-                          itemCategory: 'Bracelet',
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 7.5),
-                        child: CardItem(
-                          imgPath: 'assets/images/Rectangle 14 (1).png',
-                          itemType: 'Men' 's Bracelet',
-                          itemCategory: 'Bracelet',
-                        ),
-                      ),
-                    ],
-                  ),
-                )
               ],
             ),
           ),
-        ),
+
+          // SliverGrid(
+          //   gridDelegate:
+          //       new SliverGridDelegateWithMaxCrossAxisExtent(
+          //     maxCrossAxisExtent: 200.0,
+          //     mainAxisSpacing: 10.0,
+          //     crossAxisSpacing: 10.0,
+          //     childAspectRatio: 4.0,
+          //   ),
+          //   delegate: new SliverChildBuilderDelegate(
+          //     (BuildContext context, int index) {
+          //       return new Container(
+          //         alignment: Alignment.center,
+          //         color: Colors.teal[100 * (index % 9)],
+          //         child: new Text('grid item $index'),
+          //       );
+          //     },
+          //     childCount: 20,
+          //   ),
+          // ),
+
+          SliverGrid(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                // mainAxisExtent: 50,
+                crossAxisCount: 2,
+                crossAxisSpacing: 21,
+                mainAxisSpacing: 20,
+                childAspectRatio: MediaQuery.of(context).size.aspectRatio * 1.3,
+              ),
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, int index) {
+                  return new InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProdDetailsWidget()),
+                      );
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 15, right: 7.5),
+                      child: CardItem(
+                        imgPath: 'assets/images/Rectangle 14 (1).png',
+                        itemType: 'Men' 's Bracelet',
+                        itemCategory: 'Bracelet',
+                      ),
+                    ),
+                  );
+                },
+                childCount: 20,
+              ))
+
+          // Expanded(
+          //         child: GridView(
+          //           padding: EdgeInsets.only(bottom: 10),
+          //           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //             crossAxisCount: 2,
+          //             crossAxisSpacing: 21,
+          //             mainAxisSpacing: 20,
+          //             childAspectRatio:
+          //                 MediaQuery.of(context).size.aspectRatio * 1.3,
+          //           ),
+          //           scrollDirection: Axis.vertical,
+          //           children: [
+          //             InkWell(
+          //               onTap: () {
+          //                 Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => ProdDetailsWidget()),
+          //                 );
+          //               },
+          //               child: Padding(
+          //                 padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //                 child: CardItem(
+          //                   imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                   itemType: 'Men' 's Bracelet',
+          //                   itemCategory: 'Bracelet',
+          //                 ),
+          //               ),
+          //             ),
+          //             Padding(
+          //               padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //               child: CardItem(
+          //                 imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                 itemType: 'Men' 's Bracelet',
+          //                 itemCategory: 'Bracelet',
+          //               ),
+          //             ),
+          //             Padding(
+          //               padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //               child: CardItem(
+          //                 imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                 itemType: 'Men' 's Bracelet',
+          //                 itemCategory: 'Bracelet',
+          //               ),
+          //             ),
+          //             Padding(
+          //               padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //               child: CardItem(
+          //                 imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                 itemType: 'Men' 's Bracelet',
+          //                 itemCategory: 'Bracelet',
+          //               ),
+          //             ),
+          //             Padding(
+          //               padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //               child: CardItem(
+          //                 imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                 itemType: 'Men' 's Bracelet',
+          //                 itemCategory: 'Bracelet',
+          //               ),
+          //             ),
+          //             Padding(
+          //               padding: const EdgeInsets.only(left: 15, right: 7.5),
+          //               child: CardItem(
+          //                 imgPath: 'assets/images/Rectangle 14 (1).png',
+          //                 itemType: 'Men' 's Bracelet',
+          //                 itemCategory: 'Bracelet',
+          //               ),
+          //             ),
+          //           ],
+          //         ),
+          //       )
+        ],
       ),
     );
   }
